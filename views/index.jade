@@ -3,6 +3,11 @@ extends layout
 block content
   h1= title
 
+  .publish
+    input(type="text", id="topic", placeholder="Topic")
+    input(type="text", id="message", placeholder="Message")
+    input(type="button", id="publish", value="Publish!")
+
   #status
     p Offline
 

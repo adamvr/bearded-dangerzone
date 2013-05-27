@@ -6,3 +6,16 @@ body {
 a {
   color: #00B7FF;
 }
+
+span {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.topic {
+  color: red;
+}
+
+.message {
+  color: green;
+}
