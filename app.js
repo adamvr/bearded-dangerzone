@@ -38,13 +38,12 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 
 io.sockets.on('connection', function(socket) {
-  var client = mqtt.createClient(1883, 'test.mosquitto.org');
+  var client = mqtt.createClient();
 
   socket.on('publish', function(topic, message) {
     client.publish(topic, message);
   });
   socket.on('subscribe', function (topic) {
-    console.log('subscribed to', topic);
     client.subscribe(topic);
   });
   client.on('message', function(topic, message) {
