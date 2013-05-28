@@ -7,6 +7,25 @@ a {
   color: #00B7FF;
 }
 
+.status.offline {
+  color: red;
+}
+
+.status.online {
+  color: green;
+}
+
+.controls div {
+  float: left;
+  width: 49%
+}
+
+.controls .clear {
+  float: none;
+  clear: both;
+  width: 100%
+}
+
 span {
   padding-left: 1em;
   padding-right: 1em;
